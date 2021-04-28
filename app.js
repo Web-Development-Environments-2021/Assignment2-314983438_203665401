@@ -997,12 +997,14 @@ function UpdatePositionHourglass(){
 		if (hourglass.show){
 			board[hourglass.row][hourglass.col] = 0;
 		}
-		emptycell = findRandomEmptyCell(board);
-		hourglass.row = emptycell[0];
-		hourglass.col = emptycell[1];
-		board[hourglass.row][hourglass.col] = 6;
-		hourglass.show = true;
-		hourglass.time = timecheck;
+		if (score < 500){
+			emptycell = findRandomEmptyCell(board);
+			hourglass.row = emptycell[0];
+			hourglass.col = emptycell[1];
+			board[hourglass.row][hourglass.col] = 6;
+			hourglass.show = true;
+			hourglass.time = timecheck;
+		}
 	}
 }
 
