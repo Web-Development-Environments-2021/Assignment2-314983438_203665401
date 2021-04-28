@@ -12,7 +12,7 @@ We added those functionalities:
 
 -	Poison- if pacman eats poison he loses live
 
--	Hourglass- if pacman eats hourglass the player has additional 10 seconds to play the game.
+-	Hourglass- if pacman eats hourglass the player has additional 10 seconds to play the game (only appears if score is less than 500).
 
 All those features reappear every five seconds at random locations in the map.
 
